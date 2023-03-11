@@ -2,11 +2,11 @@ game();
 
 function game(){
 
-  var computerPoints = 0;
-  var playerPoints = 0;
+  let computerPoints = 0;
+  let playerPoints = 0;
 
   for (let i = 0; i<5; i++){
-    var roundPoint = playRound();
+    let roundPoint = playRound();
     if(roundPoint == -1) {
       computerPoints ++;
     } else if (roundPoint == 1) {
@@ -26,10 +26,10 @@ function game(){
 };
 
 function playRound(){
-  var playerSelection = prompt("Choose!").toLowerCase();
-  var computerSelection = computerPlay();
+  let playerSelection = prompt("Choose!").toLowerCase();
+  let computerSelection = computerPlay();
 
-  var points = 0;
+  let points = 0;
 
   console.log("Computer:" + computerSelection);
 
